@@ -15,7 +15,7 @@ navigation:
   - title: 返回首页
     url: /
   - title: 碎言碎语
-    url: /index.html
+    url: /mytimeline.html
 
 
 # Author 配置博主信息
