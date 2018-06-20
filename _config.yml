@@ -12,18 +12,11 @@ permalink: /:year/:month/:title.html
 
 # Navigation links
 navigation:
-  - title: 首页
+  - title: 返回首页
     url: /
   - title: 碎言碎语
     url: /index.html
-  - title: 归档
-    url: /archive.html
-  - title: 标签
-    url: /tags.html
-  - title: 友链
-    url: /links.html
-  - title: 关于
-    url: /about.html
+
 
 # Author 配置博主信息
 author: 'liantao'
