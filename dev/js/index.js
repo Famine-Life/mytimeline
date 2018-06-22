@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
         var replacement = document.createElement("div");
