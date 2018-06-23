@@ -15,27 +15,15 @@ header-img: /assets/img/cover/earth.jpg
 <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
 
 {% include header.html %}
-<header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme-color }}">
-    <div class="post-wrapper">
-        <div class="post-tags">
-            {% if page.tags.size > 0 %}
-            {% for tag in page.tags  %}
-            <a href="{{ "tags#" | append: tag | absolute_url }}" class="post-tag">{{ tag }}</a>
-            {% endfor %}
-            {% endif %}
-        </div>
-        <a href="{{ page.url | prepend: site.url }}" style="color: #fff;"><h1>{{ page.title }}</h1></a>
-        <div class="post-meta">
-            <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank" rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
-            <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date: '%Y/%m/%d' }}</time>
-        </div>
-    </div>
-    {% if page.cover %}
-    <div class="filter"></div>
-    <div class="post-cover" style="background: url('{{ page.cover | prepend: site.cdnurl }}') center no-repeat; background-size: cover;"></div>
-    {% endif %}
-</header>
 
+<div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
+        <h2><a href="{{ site.url }}">{{ page.home-title }}</a></h2>
+        <h3>{{ page.home-subtitle }}</h3>
+        {% if page.header-img %}
+        <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
+        {% endif %}
+    </div>
+    
 <main class="tags-content">
         <!-- <div style="margin-top:100px">
             <ul class="tags-list">
