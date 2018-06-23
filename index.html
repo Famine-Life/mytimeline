@@ -60,6 +60,9 @@ header-img: /assets/img/cover/earth.jpg
                         <span class="archive-name" id="{{ post.date | date: "%Y-%m-%d" }}">「{{ post.date | date: "%Y年%m月%d日" }}」</span>
                         <article class="markdown-body" style="width:650px;padding-top:10px;text-indent: 2em;"><!---->
                                 {{ post.content }}
+                                <section class="post-preview">
+                                    <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
+                                </section>
                         </article>
                     <span></span>
                     {% if forloop.last %}
