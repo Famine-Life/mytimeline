@@ -1,4 +1,5 @@
-window.onload=function(){
+$(document).ready(function(){
+//window.onload=function(){
     //mytimeline黑夜模式，根据时间23--7点设为白色字体
     var date = new Date();
     var hour = date.getHours();
