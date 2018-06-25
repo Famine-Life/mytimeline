@@ -4,7 +4,6 @@ window.onload=function(){
     var hour = date.getHours();
         if(hour==23||hour<7)
     {
-        alert("dark");
         var aList=document.getElementsByClassName("archive-name");
         for(var i=0;i<aList.length;i++){
             document.getElementsByClassName("archive-name")[i].style.color="#fff";
