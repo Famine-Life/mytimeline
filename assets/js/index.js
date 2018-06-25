@@ -4,6 +4,7 @@ window.onload=function(){
     var hour = date.getHours();
         if(hour==23||hour<7)
     {
+        console.log("黑夜模式启动");
         var aList=document.getElementsByClassName("archive-name");
         for(var i=0;i<aList.length;i++){
             document.getElementsByClassName("archive-name")[i].style.color="#fff";
