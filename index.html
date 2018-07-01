@@ -62,7 +62,7 @@ header-img: /assets/img/cover/earth.jpg
                 {% if this_month != next_month %}
                 </li>
                 <li>
-                <span class="archive-name" style="color:red;" id="{{ post.previous.date | date: "%Y-%m" }}">「{{ post.previous.date | date: "%Y年%m月" }}」</span>
+                <span class="archive-name" style="color:red!important;" id="{{ post.previous.date | date: "%Y-%m" }}">「{{ post.previous.date | date: "%Y年%m月" }}」</span>
                 {% endif %}
                 {% endif %}
                 {% endif %}
